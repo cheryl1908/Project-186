@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>A-Frame SPE Particle System Component Example</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    
+    <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+   
+</head>
+
+<body>
+    <a-scene id="scene">
+        <a-entity position="50 10 0 " spe-particles="        
+        color: yellow, red, gold, orange; 
+        distribution: sphere; 
+        randomize-velocity: true;
+        radius: 1; 
+        particle-count: 3500; 
+        velocity: 5; 
+        velocity-spread: 20; 
+        drag: 1; 
+        max-age: 5;
+        duration: -1,
+        blending: additive;
+        active-multiplier: 1000; 
+        rotation:215;
+        size: 1, 1, 1, 0">
+        </a-entity>
+        <a-entity position="1 0 -1 " spe-particles="        
+        color: pink, red, purple, magenta; 
+        distribution: sphere; 
+        randomize-velocity: true;
+        radius: 1; 
+        particle-count: 1100; 
+        velocity: 5; 
+        velocity-spread: 20; 
+        drag: 1; 
+        max-age: 5;
+        duration: -1,
+        blending: additive;
+        active-multiplier: 1000; 
+        rotation:415;
+        size: 1, 1, 1, 0">
+        </a-entity>
+        <a-entity position="-50 0 -1 " spe-particles="        
+        color: blue, cyan, indigo, silver; 
+        distribution: sphere; 
+        randomize-velocity: true;
+        radius: 1; 
+        particle-count: 1100; 
+        velocity: 5; 
+        velocity-spread: 20; 
+        drag: 1; 
+        max-age: 5;
+        duration: -1,
+        blending: additive;
+        active-multiplier: 1000; 
+        rotation:315;
+        size: 1, 1, 1, 0">
+        </a-entity>
+        <a-sky color="#000000"></a-sky>
+        <a-camera position="0 0 30"></a-camera>
+    </a-scene>
+</body>
+
+</html>
